@@ -1,0 +1,351 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <!-- Banner Section Starts Here -->
+    <section class="inner-banner bg_img padding-bottom" style="background: url({% static 'assets/images/about/bg.png'%}) no-repeat right bottom;">
+        <div class="container">
+            <div class="inner-banner-wrapper">
+                <div class="inner-banner-content">
+                    <h2 class="inner-banner-title">User <br> Dashboard</h2>
+                    <ul class="breadcums">
+                        <li>
+                            <a href="{% url 'daro:index' %}">Home</a>
+                        </li>
+                        <li>
+                            <span>Dashboard</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner-banner-thumb about d-none d-md-block">
+                    <img src="{% static 'assets/images/dashboard/thumb.png'%}" alt="about">
+                </div>
+            </div>
+        </div>
+        <div class="shape1 paroller" data-paroller-factor=".2">
+            <img src="{% static 'assets/images/about/balls.png'%}" alt="about">
+        </div>
+    </section>
+    <!-- Banner Section Ends Here -->
+
+
+    <!-- User Dashboard Section Starts Here -->
+    <section class="user-dashboard padding-top padding-bottom">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-3">
+                    <div class="dashboard-sidebar">
+                        <div class="close-dashboard d-lg-none">
+                            <i class="las la-times"></i>
+                        </div>
+                        <div class="dashboard-user">
+                            <div class="user-thumb">
+                                <img src="{% static 'assets/images/dashboard/user.png'%}" alt="dashboard">
+                            </div>
+                            <div class="user-content">
+                                <span>Welcome</span>
+                                <h5 class="name">Munna Ahmed</h5>
+                                <ul class="user-option">
+                                    <li>
+                                        <a href="#0">
+                                            <i class="las la-bell"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            <i class="las la-pen"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#0">
+                                            <i class="las la-envelope"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="user-dashboard-tab">
+                            <li>
+                                <a href="#0" class="active">Account Overview</a>
+                            </li>
+                            <li>
+                                <a href="#0" class="">Max Deposit</a>
+                            </li>
+                            <li>
+                                <a href="#0" class="">Withdraw Fund</a>
+                            </li>
+                            <li>
+                                <a href="#0" class="">Deposit History</a>
+                            </li>
+                            <li>
+                                <a href="#0" class="">Earnings History</a>
+                            </li>
+                            <li>
+                                <a href="#0" class="">Account Settings</a>
+                            </li>
+                            <li>
+                                <a href="#0" class="">Security Settings</a>
+                            </li>
+                            <li>
+                                <a href="#0" class="">Sign Out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="user-toggler-wrapper d-flex d-lg-none">
+                        <h4 class="title">User Dashboard</h4>
+                        <div class="user-toggler">
+                            <i class="las la-sliders-h"></i>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center g-4">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                            <div class="dashboard-item">
+                                <div class="dashboard-item-header">
+                                    <div class="header-left">
+                                        <h6 class="title">Earning Total</h6>
+                                        <h3 class="ammount theme-two">$30.00</h3>
+                                    </div>
+                                    <div class="right-content">
+                                        <div class="icon">
+                                            <img src="{% static 'assets/images/dashboard/Icon.png'%}" alt="dashboard">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dashboard-item-body">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                            <div class="dashboard-item">
+                                <div class="dashboard-item-header">
+                                    <div class="header-left">
+                                        <h6 class="title">Pending Withdraw</h6>
+                                        <h3 class="ammount text--base">$10.00</h3>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="{% static 'assets/images/dashboard/icon2.png'%}" alt="dashboard">
+                                    </div>
+                                </div>
+                                <div class="dashboard-item-body">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-4">
+                            <div class="dashboard-item">
+                                <div class="dashboard-item-header">
+                                    <div class="header-left">
+                                        <h6 class="title">Earning Balance</h6>
+                                        <h3 class="ammount theme-one">$80.00</h3>
+                                    </div>
+                                    <div class="icon">
+                                        <img src="{% static 'assets/images/dashboard/icon3.png'%}" alt="dashboard">
+                                    </div>
+                                </div>
+                                <div class="dashboard-item-body">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dashborad-header">
+                        <h4 class="title">Last Deposit</h4>
+                        <select>
+                            <option value="">Last Depost</option>
+                            <option value="">Last Withdraw</option>
+                            <option value="">Last Transaction</option>
+                            <option value="">Last Send Money</option>
+                        </select>
+                    </div>
+                    <table class="deposit-table">
+                        <thead>
+                            <tr>
+                                <th>Currency</th>
+                                <th>User</th>
+                                <th>Start Date</th>
+                                <th>Rate</th>
+                                <th>Deposit</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-input="currency">
+                                    <div class="currency">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/images/deposit/01.png'%}" alt="deposit">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">bitcoin</span>
+                                            <span class="info">Invest Currency</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-input="user">
+                                    <div class="user">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/images/deposit/user01.png'%}" alt="deposit">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">sunato roy</span>
+                                            <span class="info">Hyip Investor</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-input="start date">
+                                    <div class="content">
+                                        <span class="title">25 Feb 2020</span>
+                                        <span class="info">Start Date</span>
+                                    </div>
+                                </td>
+                                <td data-input="rate">
+                                    <div class="content">
+                                        <span class="title">$22,545.00<span> +$75</span></span>
+                                        <span class="info">Monthly Rate</span>
+                                    </div>
+                                </td>
+                                <td data-input="deposit">
+                                    <div class="content">
+                                        <span class="title">$33,485.00</span>
+                                        <span class="info">Deposit</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td data-input="currency">
+                                    <div class="currency">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/images/deposit/06.png'%}" alt="deposit">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">Ethereum</span>
+                                            <span class="info">Invest Currency</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-input="user">
+                                    <div class="user">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/images/deposit/user06.png'%}" alt="deposit">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">josef marton</span>
+                                            <span class="info">Hyip Investor</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-input="start date">
+                                    <div class="content">
+                                        <span class="title">25 Feb 2020</span>
+                                        <span class="info">Start Date</span>
+                                    </div>
+                                </td>
+                                <td data-input="rate">
+                                    <div class="content">
+                                        <span class="title">$22,545.00<span > +$75</span></span>
+                                        <span class="info">Monthly Rate</span>
+                                    </div>
+                                </td>
+                                <td data-input="deposit">
+                                    <div class="content">
+                                        <span class="title">$33,485.00</span>
+                                        <span class="info">Deposit</span>
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td data-input="currency">
+                                    <div class="currency">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/images/deposit/05.png'%}" alt="deposit">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">Litecoin</span>
+                                            <span class="info">Invest Currency</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-input="user">
+                                    <div class="user">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/images/deposit/user05.png'%}" alt="deposit">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">martin hook</span>
+                                            <span class="info">Hyip Investor</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-input="start date">
+                                    <div class="content">
+                                        <span class="title">25 Feb 2020</span>
+                                        <span class="info">Start Date</span>
+                                    </div>
+                                </td>
+                                <td data-input="rate">
+                                    <div class="content">
+                                        <span class="title">$22,545.00<span > +$75</span></span>
+                                        <span class="info">Monthly Rate</span>
+                                    </div>
+                                </td>
+                                <td data-input="deposit">
+                                    <div class="content">
+                                        <span class="title">$33,485.00</span>
+                                        <span class="info">Deposit</span>
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                            <tr>
+                                <td data-input="currency">
+                                    <div class="currency">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/images/deposit/04.png'%}" alt="deposit">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">Litecoin</span>
+                                            <span class="info">Invest Currency</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-input="user">
+                                    <div class="user">
+                                        <div class="thumb">
+                                            <img src="{% static 'assets/images/deposit/user04.png'%}" alt="deposit">
+                                        </div>
+                                        <div class="content">
+                                            <span class="title">martin hook</span>
+                                            <span class="info">Hyip Investor</span>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td data-input="start date">
+                                    <div class="content">
+                                        <span class="title">25 Feb 2020</span>
+                                        <span class="info">Start Date</span>
+                                    </div>
+                                </td>
+                                <td data-input="rate">
+                                    <div class="content">
+                                        <span class="title">$22,545.00<span > +$75</span></span>
+                                        <span class="info">Monthly Rate</span>
+                                    </div>
+                                </td>
+                                <td data-input="deposit">
+                                    <div class="content">
+                                        <span class="title">$33,485.00</span>
+                                        <span class="info">Deposit</span>
+                                    </div>
+                                </td>
+                                
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- User Dashboard Section Ends Here -->
+
+{% endblock %}

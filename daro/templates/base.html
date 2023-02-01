@@ -1,0 +1,386 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- BootStrap Link -->
+    <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <!-- Icon Link -->
+    <link rel="stylesheet" href="{% static 'assets/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/line-awesome.min.css' %}">
+
+    <!-- Plugings Link -->
+    <link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/magnific-popup.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/nice-select.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/odometer.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/slick.css' %}">
+
+    <!-- Custom Link -->
+    <link rel="stylesheet" href="{% static 'assets/css/main.css' %}">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'assets/images/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'assets/images/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'assets/images/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'assets/images/site.webmanifest' %}">
+
+    <title>Daro Labs</title>
+
+
+</head>
+
+
+    <div class="overlay"></div>
+
+    <!-- Header Section Starts Here -->
+    <header class="header">
+        <div class="header-bottom">
+            <div class="container">
+                <div class="header-area">
+                    <div class="logo">
+                        <a href="{% url 'daro:index' %}">
+                            <img src="{% static 'assets/images/daro.jpeg' %}" alt="logo" style="width: 60%; height: 60%;">
+                        </a>
+                    </div>
+                    <div class="header-trigger d-block d-lg-none">
+                        <span></span>
+                    </div>
+                    <ul class="menu">
+                        <li>
+                            <a href="{% url 'daro:index' %}">Home</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'daro:about' %}">About</a>
+                        </li>
+                        <li>
+                            <a href="#0">Plan</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="{% url 'daro:investment_plan_01' %}">Investment Plan 01</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'daro:investment_plan_02' %}">Investment Plan 02</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'daro:investment_plan_03' %}">Investment Plan 03</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#0">Pages</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="{% url 'daro:user_dashboard' %}">User Dashboard</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'daro:investor' %}">Investor</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'daro:affiliate' %}">Affiliate</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'daro:mission_vision' %}">Mission & Vision</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'daro:privacy_policy' %}">Privacy & Policy</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'daro:terms_of_service' %}">Terms Of Service</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'daro:refund_policy' %}">Refund Policy</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'daro:faq' %}">Faq</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'daro:error_404' %}">404</a>
+                                </li>
+                                <li>
+                                    <a href="#0">Account</a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="{% url 'daro:login' %}">Log In</a>
+                                        </li>
+                                        <li>
+                                            <a href="{% url 'daro:sign_up' %}">Sign Up</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#0">Blog</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="{% url 'daro:blog' %}">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="{% url 'daro:blog_details' %}">Blog Details</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="{% url "daro:contact" %}">Contact</a>
+                        </li>
+                        <li>
+                            <a href="{% url 'daro:investment_plan_01' %}" class="cmn--btn">Invest Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section Ends Here -->
+
+
+    {% block content %}
+
+
+
+
+
+    {% endblock %}
+
+    <!-- Profit Calculation Section Starts Here -->
+    <section class="profit-calculation wow slideInUp overflow-hidden">
+        <div class="container">
+            <div class="profit-calculation-wrapper">
+                <h3 class="title">Calculate How Much You Profit</h3>
+                <form class="profit-form">
+                    <div class="row g-4">
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form--group">
+                                <select>
+                                    <option value="plan01">Select the Plan</option>
+                                    <option value="plan01">Business Plan</option>
+                                    <option value="plan01">Professional Plan</option>
+                                    <option value="plan01">Individual Plan</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <div class="form--group">
+                                <select>
+                                    <option value="plan01">Select the Currency</option>
+                                    <option value="plan01">Bitcoin</option>
+                                    <option value="plan01">Ethereum</option>
+                                    <option value="plan01">Ripple</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="form--group">
+                                <input type="text" class="form--control" placeholder="Enter the Ammount" required>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <div class="profit-title-wrapper d-flex justify-content-between my-5 mb-3">
+                    <h5 class="daily-profit text--secondary">Daily Profit - <span class="ammount">0.1200</span>BTC</h5>
+                    <h5 class="daily-profit theme-four">Total Profit - <span class="ammount">24.1200</span>BTC</h5>
+                </div>
+                <div class="invest-range-area">
+                    <div class="main-amount">
+                        <input type="text" class="calculator-invest" id="btc-amount" readonly>
+                    </div>
+                    <div class="invest-amount" data-min="01 BTC" data-max="10000 BTC">
+                        <div id="btc-range" class="invest-range-slider"></div>
+                    </div>
+                    <button type="submit" class="custom-button px-0">Invest now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Profit Calculation Section Ends Here -->
+
+
+
+    <!-- Footer Section Starts Here -->
+   <section class="footer-section bg_img" style="background: url({% static 'assets/images/footer/bg.png'%}) no-repeat center top;">
+        <div class="container">
+            <div class="row gy-5">
+                <div class=" col-xl-3 col-lg-5 col-md-6 col-sm-6">
+                    <div class="footer-widget">
+                        <h3 class="widget-title">Know About Us</h3>
+                        <p>
+                            Massain eu dictum in, facilisi mauriorci tincidunt. Mauris suspendisse, faucibus id tellus pellentesque vestibulupendisse mauris, tempus nibh ac, vel sit massa dui, ac curabitur feugiat blandit
+                        </p>
+                        <ul class="social-icons">
+                            <li>
+                                <a href="#0">
+                                    <i class="lab la-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <i class="lab la-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <i class="lab la-instagram"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#0">
+                                    <i class="lab la-linkedin-in"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-xl-2 col-lg-4 col-md-4 col-sm-6">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">Company</h4>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="{% url 'daro:faq' %}">
+
+                                <i class="las la-angle-double-right"></i>Faq</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'daro:blog' %}">
+
+                                <i class="las la-angle-double-right"></i>News</a>
+                            </li>
+                            <li>
+                                <a href="{% url "daro:contact" %}">
+
+                                <i class="las la-angle-double-right"></i>Support</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'daro:terms_of_service' %}">
+
+                                <i class="las la-angle-double-right"></i>Terms & Conditions</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'daro:terms_of_service' %}">
+
+                                <i class="las la-angle-double-right"></i>Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-xl-2 col-lg-4 col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">Useful Link</h4>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="{% url 'daro:mission_vision' %}">
+                                <i class="las la-angle-double-right"></i>Mission & Vision</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'daro:investment_plan_01' %}">
+                                <i class="las la-angle-double-right"></i>Pricing Plan</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'daro:affiliate' %}">
+
+                                <i class="las la-angle-double-right"></i>Affiliate Program</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'daro:investment_plan_01' %}">
+
+                                <i class="las la-angle-double-right"></i>Investment</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'daro:investor' %}">
+
+                                <i class="las la-angle-double-right"></i>Investor</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-xl-2 col-lg-4 col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">Investment</h4>
+                        <ul class="footer-links">
+                            <li>
+                                <a href="{% url 'daro:investment_plan_01' %}">
+
+                                <i class="las la-angle-double-right"></i>Starter Plan</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'daro:investment_plan_02' %}l">
+
+                                <i class="las la-angle-double-right"></i>
+                                Medium Plan</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'daro:investment_plan_03' %}l">
+
+                                <i class="las la-angle-double-right"></i>
+                                Special Plan </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'daro:investment_plan_02' %}">
+
+                                <i class="las la-angle-double-right"></i>
+                                Vip Plan</a>
+                            </li>
+                            <li>
+                                <a href="{% url 'daro:investment_plan_01' %}">
+
+                                <i class="las la-angle-double-right"></i>
+                                Silver Plan</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class=" col-xl-3 col-lg-4 col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4 class="widget-title">Contact Information</h4>
+                        <ul class="contact-info">
+                            <li>
+                                medino,  kitaniya road , USA
+                            </li>
+                            <li>
+                                Call Us Now 1-234-567-890
+                            </li>
+                            <li>
+                               <a href="https://template.viserlab.com/cdn-cgi/l/email-protection#9df9f8f0f2eee8ededf2efe9ddb3fef2f0"><span class="__cf_email__" data-cfemail="aadddddd84cfd2c7cbdac6cf9e9f9a9aeacdc7cbc3c684c9c5c7">[email&#160;protected]</span></a>
+                            </li>
+                            <li>
+                                <a href="https://template.viserlab.com/cdn-cgi/l/email-protection#c8acada5a7bbbdb8b8a7babc88e6aba7a5"><span class="__cf_email__" data-cfemail="c6a2a3aba9b5b3b6b6a9b4b286e8a5a9ab">[email&#160;protected]</span></a>
+                            </li>
+                            <li>
+                                <a href="https://template.viserlab.com/cdn-cgi/l/email-protection#86e2e3ebe9f5f3f6f6e9f4f2c6a8e5e9eb"><span class="__cf_email__" data-cfemail="c2b5b5b5eca6a7afada1adafb2a3acbb82a5afa3abaeeca1adaf">[email&#160;protected]</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p class="text-center text-white pt-4 p-sm-5 pb-0">Copyright &copy;Daro Labs 2023. All Rights Reserved</p>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Ends Here -->
+
+
+
+
+
+    <a href="#0" class="scrollToTop active"><i class="las la-chevron-up"></i></a>
+{#    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>#}
+         <script src="{% static 'assets/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.ui.js' %}"></script>
+    <script src="{% static 'assets/js/slick.min.js' %}"></script>
+    <script src="{% static 'assets/js/wow.min.js' %}"></script>
+    <script src="{% static 'assets/js/magnific-popup.min.js' %}"></script>
+    <script src="{% static 'assets/js/odometer.min.js' %}"></script>
+    <script src="{% static 'assets/js/viewport.jquery.js' %}"></script>
+    <script src="{% static 'assets/js/nice-select.js' %}"></script>
+    <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+</html>

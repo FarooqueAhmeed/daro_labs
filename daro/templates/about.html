@@ -1,0 +1,493 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+    <!-- Banner Section Starts Here -->
+    <section class="inner-banner bg_img padding-bottom" style="background: url({% static 'assets/images/about/bg.png'%}) no-repeat right bottom;">
+        <div class="container">
+            <div class="inner-banner-wrapper">
+                <div class="inner-banner-content">
+                    <h2 class="inner-banner-title">About our company</h2>
+                    <ul class="breadcums">
+                        <li>
+                            <a href="{% url 'daro:index' %}">Home</a>
+                        </li>
+                        <li>
+                            <span>About</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner-banner-thumb about d-none d-md-block">
+                    <img src="{% static 'assets/images/about/thumb2.png'%}" alt="about">
+                </div>
+            </div>
+        </div>
+        <div class="shape1">
+            <img src="{% static 'assets/images/about/balls.png'%}" alt="about">
+        </div>
+    </section>
+    <!-- Banner Section Ends Here -->
+
+
+    <!-- Why Choose Us Section Starts Here -->
+    <section class="choose-us padding-bottom padding-top overflow-hidden">
+        <div class="container">
+            <div class="row gy-5">
+                <div class="col-lg-5  d-none d-lg-block">
+                    <div class="choose-us-thumb two">
+                        <img src="{% static 'assets/images/choose-us/thumb2.png'%}" alt="choose-us">
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="choose-us-right-content">
+                        <div class="section-header">
+                            <span class="subtitle  fadeInUp">WHY CHOOSE US</span>
+                            <h2 class="title mx-100">Why You Should Saty With Us</h2>
+                            <p class=" fadeInUp" data--delay=".6s">
+                                Dapibus et amet sociis, arcu orci orci tincidunt neque. Purus etortors justmauris eumalesuada architecto.
+                            </p>
+                        </div>
+                        <div class="row g-4 row2">
+                            <div class="col-xl-6 col-lg-12 col-md-6  slideInUp" data--delay=".3s">
+                                <div class="choose-item-two">
+                                    <div class="choose-thumb-two">
+                                        <img src="{% static 'assets/images/choose-us/reimbursement.png'%}" alt="choose-us">
+                                    </div>
+                                    <div class="choose-content-two">
+                                        <h5 class="title">Protected Website</h5>
+                                        <p>Donec tempus sed et mauris conquat, proin lectus varius wiortamet labore ac nam purus maurilentesq.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-6  slideInUp" data--delay=".4s">
+                                <div class="choose-item-two">
+                                    <div class="choose-thumb-two">
+                                        <img src="{% static 'assets/images/choose-us/firewall.png'%}" alt="choose-us">
+                                    </div>
+                                    <div class="choose-content-two">
+                                        <h5 class="title">Quick Withdrawal</h5>
+                                        <p>Donec tempus sed et mauris conquat, proin lectus varius wiortamet labore ac nam purus maurilentesq.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-6  slideInUp" data--delay=".5s">
+                                <div class="choose-item-two">
+                                    <div class="choose-thumb-two">
+                                        <img src="{% static 'assets/images/choose-us/register.png'%}" alt="choose-us">
+                                    </div>
+                                    <div class="choose-content-two">
+                                        <h5 class="title">Registered Company</h5>
+                                        <p>Donec tempus sed et mauris conquat, proin lectus varius wiortamet labore ac nam purus maurilentesq.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-12 col-md-6  slideInUp" data--delay=".6s">
+                                <div class="choose-item-two">
+                                    <div class="choose-thumb-two">
+                                        <img src="{% static 'assets/images/choose-us/shield.png'%}" alt="choose-us">
+                                    </div>
+                                    <div class="choose-content-two">
+                                        <h5 class="title">Strong Protection</h5>
+                                        <p>Donec tempus sed et mauris conquat, proin lectus varius wiortamet labore ac nam purus maurilentesq.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section Ends Here -->
+
+
+    <!-- Investor Section Starts Here -->
+    <section class="investor-section padding-bottom overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-header text-center">
+                        <span class="subtitle">featured investors</span>
+                        <h2 class="title">our top investor</h2>
+                        <p>
+                            Pipsum dolor sit amet consectetur adipisicing elit. Aliquam modi explicabo nam ex unde et dolorum non dolor! Dolorum nobis
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center gy-5">
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6  slideInUp" data--delay=".3s">
+                    <div class="investor-item">
+                        <div class="investor-thumb">
+                            <img src="{% static 'assets/images/investor/item1.png'%}" alt="investor">
+                        </div>
+                        <div class="investor-content">
+                            <h4 class="name">Robart Betson</h4>
+                            <span class="designation">Top Investor</span>
+                            <h3 class="invest-ammount">$40,000.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6  slideInUp" data--delay=".4s">
+                    <div class="investor-item">
+                        <div class="investor-thumb">
+                            <img src="{% static 'assets/images/investor/item2.png'%}" alt="investor">
+                        </div>
+                        <div class="investor-content">
+                            <h4 class="name">Robart Betson</h4>
+                            <span class="designation">Top Investor</span>
+                            <h3 class="invest-ammount">$40,000.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6  slideInUp" data--delay=".5s">
+                    <div class="investor-item">
+                        <div class="investor-thumb">
+                            <img src="{% static 'assets/images/investor/item3.png'%}" alt="investor">
+                        </div>
+                        <div class="investor-content">
+                            <h4 class="name">Robart Betson</h4>
+                            <span class="designation">Top Investor</span>
+                            <h3 class="invest-ammount">$40,000.00</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6  slideInUp" data--delay=".6s">
+                    <div class="investor-item">
+                        <div class="investor-thumb">
+                            <img src="{% static 'assets/images/investor/item4.png'%}" alt="investor">
+                        </div>
+                        <div class="investor-content">
+                            <h4 class="name">Robart Betson</h4>
+                            <span class="designation">Top Investor</span>
+                            <h3 class="invest-ammount">$40,000.00</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Investor Section Ends Here -->
+
+
+    <!-- Help Section Starts Here -->
+    <section class="help-section overflow-hidden">
+        <div class="container">
+            <div class="row align-items-center gy-5 flex-column-reverse flex-lg-row">
+                <div class="col-lg-6">
+                    <div class="help-content">
+                        <div class="section-header">
+                            <span class="subtitle wow fadeInUp">we are ready for your help</span>
+                            <h2 class="title wow fadeInUp" data-wow-delay=".5s">How We Can Help You?</h2>
+                            <p class="wow fadeInUp" data-wow-delay=".6s">
+                                Dapibus et amet sociis, arcu orci orci tincidunt neque. Purus etortor sjustmauris eumalesuada architecto.
+                            </p>
+                        </div>
+                        <div class="faq-tab-menu nav-tabs nav border-0 row g-4 justify-content-center">
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay=".2s">
+                                <a href="#investor" class="item active" data-bs-toggle="tab">
+                                    <div class="thumb">
+                                        <img src="{% static 'assets/images/help/trading.png'%}" alt="">
+                                    </div>
+                                    <h5>Become an investor</h5>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay=".3s">
+                                <a href="#privacy" class="item" data-bs-toggle="tab">
+                                    <div class="thumb">
+                                        <img src="{% static 'assets/images/help/password.png'%}" alt="">
+                                    </div>
+                                    <h5>our company privacy</h5>
+                                </a>
+                            </div>
+                            <div class="col-6 col-sm-4 col-md-4 col-lg-6 col-xl-4 wow fadeInLeft" data-wow-delay=".4s">
+                                <a href="#account" class="item" data-bs-toggle="tab">
+                                    <div class="thumb">
+                                        <img src="{% static 'assets/images/help/support.png'%}" alt="">
+                                    </div>
+                                    <h5>how setting account</h5>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="tab-content">
+                            <div class="tab-pane show fade active" id="investor">
+                                <div class="faq-wrapper">
+                                    <div class="faq-item wow fadeInUp" data-wow-delay=".3s">
+                                        <div class="faq-title">
+                                            <h5 class="title">Why You Should Become An Investor?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis distinctio quas at, voluptates saepe asperiores nesciunt nulla dolor dolore alias! Saepe laboriosam aliquid, ullam nihil nostrum quibusdam iste expedita inventore?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item open active wow fadeInUp" data-wow-delay=".4s">
+                                        <div class="faq-title">
+                                            <h5 class="title">Can I Invest Using Cryptocurrency?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis distinctio quas at, voluptates saepe asperiores nesciunt nulla dolor dolore alias! Saepe laboriosam aliquid, ullam nihil nostrum quibusdam iste expedita inventore?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item wow fadeInUp" data-wow-delay=".5s">
+                                        <div class="faq-title">
+                                            <h5 class="title">Why You Choose Us?</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis distinctio quas at, voluptates saepe asperiores nesciunt nulla dolor dolore alias! Saepe laboriosam aliquid, ullam nihil nostrum quibusdam iste expedita inventore?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane show fade" id="privacy">
+                                <div class="faq-wrapper">
+                                    <div class="faq-item">
+                                        <div class="faq-title">
+                                            <h5 class="title">Frequently gets updated based on new data insights.</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis distinctio quas at, voluptates saepe asperiores nesciunt nulla dolor dolore alias! Saepe laboriosam aliquid, ullam nihil nostrum quibusdam iste expedita inventore?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item open active">
+                                        <div class="faq-title">
+                                            <h5 class="title">Drives internal pageviews to.</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis distinctio quas at, voluptates saepe asperiores nesciunt nulla dolor dolore alias! Saepe laboriosam aliquid, ullam nihil nostrum quibusdam iste expedita inventore?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-title">
+                                            <h5 class="title">Showcases expertise, trust, and authority.</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis distinctio quas at, voluptates saepe asperiores nesciunt nulla dolor dolore alias! Saepe laboriosam aliquid, ullam nihil nostrum quibusdam iste expedita inventore?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane show fade" id="account">
+                                <div class="faq-wrapper">
+                                    <div class="faq-item">
+                                        <div class="faq-title">
+                                            <h5 class="title">Frequently gets updated based on new data insights.</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis distinctio quas at, voluptates saepe asperiores nesciunt nulla dolor dolore alias! Saepe laboriosam aliquid, ullam nihil nostrum quibusdam iste expedita inventore?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item open active">
+                                        <div class="faq-title">
+                                            <h5 class="title">Drives internal pageviews to.</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis distinctio quas at, voluptates saepe asperiores nesciunt nulla dolor dolore alias! Saepe laboriosam aliquid, ullam nihil nostrum quibusdam iste expedita inventore?
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="faq-item">
+                                        <div class="faq-title">
+                                            <h5 class="title">Showcases expertise, trust, and authority.</h5>
+                                            <div class="arrow">
+                                                <i class="fas fa-angle-up"></i>
+                                            </div>
+                                        </div>
+                                        <div class="faq-content">
+                                            <p>
+                                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis distinctio quas at, voluptates saepe asperiores nesciunt nulla dolor dolore alias! Saepe laboriosam aliquid, ullam nihil nostrum quibusdam iste expedita inventore?
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-none d-lg-block wow fadeInRight">
+                    <div class="help-thumb ">
+                        <img src="{% static 'assets/images/help/thumb.png'%}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Help Section Ends Here -->
+
+
+    <!-- Testimonial Two Section Starts Here -->
+    <section class="testimonial-section-two padding-top padding-bottom">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7">
+                    <div class="section-header text-center">
+                        <span class="subtitle  fadeInUp">client feedback</span>
+                        <h2 class="title  mx-100">Happy Client What Say About Us</h2>
+                        <p class=" fadeInUp" data--delay=".6s">
+                            Pipsum dolor sit amet consectetur adipisicing elit. Aliquam modi explicabo nam ex unde et dolorum non dolor! Dolorum nobis
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-slider-two">
+                <div class="single-slider">
+                    <div class="testimonial-item-two">
+                        <div class="testimonial-thumb-two">
+                            <img src="{% static 'assets/images/testimonial/item2.png'%}" alt="">
+                        </div>
+                        <div class="testimonial-content-two">
+                            <div class="quote-icon">
+                                <i class="las la-quote-left"></i>
+                            </div>
+                            <h4 class="name">Robindronat</h4>
+                            <span class="designation">Hyip Investor</span>
+                            <p>Placerat pellentesque eros elit lobortis eleifend amet vivamus integer sed tellus quibusdam mauris. Leo cras molestie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider">
+                    <div class="testimonial-item-two">
+                        <div class="testimonial-thumb-two">
+                            <img src="{% static 'assets/images/testimonial/item4.png'%}" alt="">
+                        </div>
+                        <div class="testimonial-content-two">
+                            <div class="quote-icon">
+                                <i class="las la-quote-left"></i>
+                        </div>
+                            <h4 class="name">Robindronat</h4>
+                            <span class="designation">Hyip Investor</span>
+                            <p>Placerat pellentesque eros elit lobortis eleifend amet vivamus integer sed tellus quibusdam mauris. Leo cras molestie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider">
+                    <div class="testimonial-item-two">
+                        <div class="testimonial-thumb-two">
+                            <img src="{% static 'assets/images/testimonial/item3.png'%}" alt="">
+                        </div>
+                        <div class="testimonial-content-two">
+                            <div class="quote-icon">
+                                <i class="las la-quote-left"></i>
+                            </div>
+                            <h4 class="name">Robindronat</h4>
+                            <span class="designation">Hyip Investor</span>
+                            <p>Placerat pellentesque eros elit lobortis eleifend amet vivamus integer sed tellus quibusdam mauris. Leo cras molestie.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-slider">
+                    <div class="testimonial-item-two">
+                        <div class="testimonial-thumb-two">
+                            <img src="{% static 'assets/images/testimonial/item4.png'%}" alt="">
+                        </div>
+                        <div class="testimonial-content-two">
+                            <div class="quote-icon">
+                                <i class="las la-quote-left"></i>
+                            </div>
+                            <h4 class="name">Robindronat</h4>
+                            <span class="designation">Hyip Investor</span>
+                            <p>Placerat pellentesque eros elit lobortis eleifend amet vivamus integer sed tellus quibusdam mauris. Leo cras molestie.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonial Two Section Ends Here -->
+
+
+    <!-- Payment Gateway Section Starts Here -->
+    <section class="payment-gateway padding-bottom">
+        <div class="container">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-5">
+                    <div class="section-header">
+                        <h2 class="title  fadeInUp" data--delay=".5s">Choose Yor Payment 
+                            Gateway</h2>
+                        <p class=" fadeInUp" data--delay=".6s">
+                            Risus et ut arcu sem nulla. Sit lacus lorem, sed turpis erat rhoncus nibh. Lacinia mauris vel, nibh sociis praesent aliquam proin, sit ut nec ultrices, odio lacus
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-7  fadeInRight">
+                    <div class="payment-gateway-slider">
+                        <div class="sigle-slider">
+                            <div class="gateway-item">
+                                <img src="{% static 'assets/images/gateway/icon1.png'%}" alt="gateway">
+                                <span class="coin-name">Bitcoin</span>
+                            </div>
+                        </div>
+                        <div class="sigle-slider">
+                            <div class="gateway-item">
+                                <img src="{% static 'assets/images/gateway/icon2.png'%}" alt="gateway">
+                                <span class="coin-name">Bitcoin</span>
+                            </div>
+                        </div>
+                        <div class="sigle-slider">
+                            <div class="gateway-item">
+                                <img src="{% static 'assets/images/gateway/icon3.png'%}" alt="gateway">
+                                <span class="coin-name">Ethereum</span>
+                            </div>
+                        </div>
+                        <div class="sigle-slider">
+                            <div class="gateway-item">
+                                <img src="{% static 'assets/images/gateway/icon4.png'%}" alt="gateway">
+                                <span class="coin-name">Ripple</span>
+                            </div>
+                        </div>
+                        <div class="sigle-slider">
+                            <div class="gateway-item">
+                                <img src="{% static 'assets/images/gateway/icon2.png'%}" alt="gateway">
+                                <span class="coin-name">Ethereum</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Payment Gateway Section Ends Here -->
+
+
+
+
+    {% endblock %}

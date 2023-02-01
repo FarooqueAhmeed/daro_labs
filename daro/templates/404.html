@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+
+
+    <!-- Banner Section Starts Here -->
+    <section class="inner-banner bg_img" style="background: url({% static 'assets/images/404/bg.png'%}) no-repeat center bottom;">
+        <div class="container">
+            <div class="inner-banner-wrapper">
+                <div class="inner-banner-content padding-bottom">
+                    <h2 class="inner-banner-title">Sorry! page not 
+                        found</h2>
+                    <ul class="breadcums">
+                        <li>
+                            <a href="{% url 'daro:index' %}">Home</a>
+                        </li>
+                        <li>
+                            <span>Error Page</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="inner-banner-thumb d-none d-md-block">
+                    <img src="{% static 'assets/images/404/thumb.png'%}" alt="about">
+                </div>
+            </div>
+        </div>
+        <div class="shape1 paroller" data-paroller-factor=".2">
+            <img src="{% static 'assets/images/about/balls.png'%}" alt="about">
+        </div>
+    </section>
+    <!-- Banner Section Ends Here -->
+
+
+    <!-- Error Section Starts Here -->
+    <section class="error-page padding-top padding-bottom">
+        <div class="container">
+            <div class="error-thumb">
+                <img src="{% static 'assets/images/404/404.png'%}" alt="404">
+            </div>
+            <div class="error-content">
+                <h2 class="title">Sorry, Page Not Found</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem ex ut ipsam sunt laudantium perspiciatis sint veniam modi minima, blanditiis nesciunt, dolorum recusandae vitae repellat ducimus qui maxime hic saepe. Lorem ipsum dolor sit amet, consectetur adipisicing elit. In porro totam nemo minus veritatis corrupti, doloremque cum odio qui facere numquam dolor illum repellat iste officia debitis dolores, magnam maiores.
+                </p>
+                <div class="form--group">
+                    <input type="email" class="form--control" placeholder="Search for Page">
+                    <button class="custom-button" type="button">Search</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Error Section Ends Here -->
+
+
+{% endblock %}
